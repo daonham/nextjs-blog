@@ -1,0 +1,39 @@
+{
+  "name": "nextjs-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export && npm run build:rss",
+    "start": "next start",
+    "build:rss": "node ./.next/server/scripts/build-rss.js"
+  },
+  "dependencies": {
+    "@mapbox/rehype-prism": "^0.5.0",
+    "@mdx-js/loader": "^1.6.6",
+    "@next/mdx": "^9.4.4",
+    "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^10.0.2",
+    "next": "^10.0.1",
+    "postcss": "^8.1.7",
+    "postcss-nested": "^4.2.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "tailwindcss": "^2.0.1",
+    "tinytime": "^0.2.6"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^9.4.4",
+    "eslint": "^7.13.0",
+    "eslint-config-react-app": "^6.0.0",
+    "file-loader": "^6.0.0",
+    "rss": "^1.2.2",
+    "simple-functional-loader": "^1.2.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "not edge <= 18",
+    "not ie 11",
+    "not op_mini all"
+  ]
+}
