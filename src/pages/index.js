@@ -1,6 +1,7 @@
 import tinytime from 'tinytime'
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image'
 import getAllPostPreviews from '@/getAllPostPreviews'
 import twitterCard from '@/img/twitter-card.jpg'
 
@@ -44,11 +45,11 @@ export default function Home() {
         </div>
       </div>
       <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-        <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-4xl md:leading-10">
           Latest Blog
         </h1>
         <p className="text-lg leading-7 text-gray-500">
-          All the latest AluraStudio news, straight from the team.
+          All the latest Next JS news, straight from the team.
         </p>
       </div>
       <ul className="divide-y divide-gray-200">
@@ -58,7 +59,7 @@ export default function Home() {
               <article className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-top">
                  <div>
                    <a className="inline-block h-full" href={link} title={meta.title}>
-                    <img className="object-cover h-full w-full" src={meta.image} />
+                    <Image src={meta.image} className="object-cover h-full w-full" width={800} height={800} />
                    </a>
                  </div>
                 <div className="space-y-5 xl:col-span-3 xl:ml-6">
