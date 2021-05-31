@@ -1,54 +1,105 @@
+import { useState } from 'react'
+
 import Link from 'next/link'
-
-function TailwindMark({ className }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 55 33">
-      <path fill="#fff" d="M0 0h55v33H0z" />
-      <path
-        fill="#16BDCA"
-        fillRule="evenodd"
-        d="M27.5 0c-7.333 0-11.917 3.667-13.75 11 2.75-3.667 5.958-5.042 9.625-4.125 2.092.523 3.587 2.04 5.242 3.72 2.697 2.737 5.817 5.905 12.633 5.905 7.333 0 11.917-3.667 13.75-11-2.75 3.667-5.958 5.042-9.625 4.125-2.092-.523-3.587-2.04-5.242-3.72C37.436 3.166 34.316 0 27.5 0zM13.75 16.5c-7.333 0-11.917 3.667-13.75 11 2.75-3.667 5.958-5.042 9.625-4.125 2.092.523 3.587 2.04 5.242 3.72C17.564 29.834 20.684 33 27.5 33c7.333 0 11.917-3.667 13.75-11-2.75 3.667-5.958 5.042-9.625 4.125-2.092-.523-3.587-2.04-5.242-3.72-2.697-2.738-5.817-5.905-12.633-5.905z"
-        clipRule="evenodd"
-      />
-    </svg>
-  )
-}
-
-function TailwindLogo({ className }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 285 33">
-      <path
-        fill="#16BDCA"
-        fillRule="evenodd"
-        d="M27.5 0c-7.333 0-11.917 3.667-13.75 11 2.75-3.667 5.958-5.042 9.625-4.125 2.092.523 3.587 2.04 5.242 3.72 2.697 2.737 5.817 5.905 12.633 5.905 7.333 0 11.917-3.667 13.75-11-2.75 3.667-5.958 5.042-9.625 4.125-2.092-.523-3.587-2.04-5.242-3.72C37.436 3.166 34.316 0 27.5 0zM13.75 16.5c-7.333 0-11.917 3.667-13.75 11 2.75-3.667 5.958-5.042 9.625-4.125 2.092.523 3.587 2.04 5.242 3.72C17.564 29.834 20.684 33 27.5 33c7.333 0 11.917-3.667 13.75-11-2.75 3.667-5.958 5.042-9.625 4.125-2.092-.523-3.587-2.04-5.242-3.72-2.697-2.738-5.817-5.905-12.633-5.905z"
-        clipRule="evenodd"
-      />
-      <path
-        fill="#374151"
-        d="M80.496 14.692V10.74h-4.712V4.42L71.68 5.636v5.104h-3.496v3.952h3.496v9.12c0 4.94 2.508 6.688 8.816 5.928v-3.686c-3.116.152-4.712.19-4.712-2.242v-9.12h4.712zM98.487 10.74v2.698c-1.444-1.976-3.686-3.192-6.65-3.192-5.168 0-9.462 4.332-9.462 9.994 0 5.624 4.294 9.994 9.462 9.994 2.964 0 5.206-1.216 6.65-3.23v2.736h4.104v-19h-4.104zm-6.004 15.58c-3.42 0-6.004-2.546-6.004-6.08 0-3.534 2.584-6.08 6.004-6.08 3.42 0 6.004 2.546 6.004 6.08 0 3.534-2.584 6.08-6.004 6.08zM109.426 7.89c1.444 0 2.622-1.216 2.622-2.622a2.627 2.627 0 00-2.622-2.622 2.627 2.627 0 00-2.622 2.622c0 1.406 1.178 2.622 2.622 2.622zm-2.052 21.85h4.104v-19h-4.104v19zM116.244 29.74h4.104V2h-4.104v27.74zM147.001 10.74l-3.724 13.11-3.952-13.11h-3.914l-3.99 13.11-3.686-13.11h-4.332l5.966 19h4.028l3.99-12.806 3.952 12.806h4.028l5.966-19h-4.332zM156.407 7.89c1.444 0 2.622-1.216 2.622-2.622a2.627 2.627 0 00-2.622-2.622 2.627 2.627 0 00-2.622 2.622c0 1.406 1.178 2.622 2.622 2.622zm-2.052 21.85h4.104v-19h-4.104v19zM173.218 10.246c-2.584 0-4.636.95-5.89 2.926V10.74h-4.104v19h4.104V19.556c0-3.876 2.128-5.472 4.826-5.472 2.584 0 4.256 1.52 4.256 4.408V29.74h4.104V18.074c0-4.94-3.04-7.828-7.296-7.828zM199.981 3.14v10.298c-1.444-1.976-3.686-3.192-6.65-3.192-5.168 0-9.462 4.332-9.462 9.994 0 5.624 4.294 9.994 9.462 9.994 2.964 0 5.206-1.216 6.65-3.23v2.736h4.104V3.14h-4.104zm-6.004 23.18c-3.42 0-6.004-2.546-6.004-6.08 0-3.534 2.584-6.08 6.004-6.08 3.42 0 6.004 2.546 6.004 6.08 0 3.534-2.584 6.08-6.004 6.08z"
-      />
-      <path
-        fill="#16BDCA"
-        d="M221.249 19.884c1.113-.895 1.792-2.172 1.792-3.8 0-3.177-2.579-5.349-5.783-5.349h-7.493V29.74h8.063c3.285 0 5.919-2.253 5.919-5.511 0-1.982-.977-3.476-2.498-4.345zm-3.991-5.647c1.195 0 2.036.896 2.036 2.09 0 1.195-.868 2.091-2.036 2.091h-3.747v-4.18h3.747zm.57 12h-4.317v-4.48h4.317c1.276 0 2.199.951 2.199 2.227 0 1.303-.923 2.254-2.199 2.254zM232.122 26.156V10.735h-3.747V29.74h10.996v-3.584h-7.249zM251.492 30.12c5.484 0 9.882-4.344 9.882-9.883 0-5.565-4.398-9.882-9.882-9.882-5.485 0-9.856 4.317-9.856 9.883 0 5.538 4.371 9.882 9.856 9.882zm0-3.665c-3.448 0-6.136-2.58-6.136-6.217 0-3.666 2.688-6.245 6.136-6.245s6.135 2.58 6.135 6.245c0 3.638-2.687 6.217-6.135 6.217zM284.832 19.532h-9.53v3.312h5.756c-.652 2.172-2.552 3.61-5.539 3.61-3.964 0-6.489-2.66-6.489-6.19 0-3.61 2.607-6.271 6.218-6.271 2.307 0 4.235 1.113 5.104 2.633l3.204-1.846c-1.602-2.606-4.67-4.425-8.281-4.425-5.675 0-9.964 4.398-9.964 9.91 0 5.43 4.235 9.855 10.181 9.855 5.457 0 9.34-3.638 9.34-9.122v-1.466z"
-      />
-    </svg>
-  )
-}
+import LanzoLogo from '@/img/lanzo-logo.png'
+import CesaLogo from '@/img/cesa-logo.png'
+import MiproLogo from '@/img/mipro-logo.png'
+import OrgafreshLogo from '@/img/orgafresh-logo.png'
+import UmbalaLogo from '@/img/umbala-logo.png'
 
 export default function Header() {
+  const [theme, setTheme] = useState(false)
+  const [document, setDocument] = useState(false)
+
   return (
     <header className="flex justify-between items-center py-10">
       <div>
         <Link href="/">
-          <a aria-label="Tailwind CSS Blog">
-            <TailwindMark className="h-6 sm:hidden" />
-            <TailwindLogo className="hidden sm:block h-6" />
-          </a>
+          <a className="text-2xl font-semibold" aria-label="Alura Studio">AluraStudio</a>
         </Link>
       </div>
-      <div className="text-base leading-5">
-        <a href="https://tailwindcss.com" className="font-medium text-gray-500 hover:text-gray-700">
-          Documentation &rarr;
+      <div className="hidden md:ml-6 md:flex md:items-center">
+        <div className="relative">
+          <button
+            onClick={ () => {
+              setTheme(!theme)
+              setDocument( false )
+            }}
+            className="ml-4 inline-flex items-center text-base font-medium px-3 py-2 rounded-md text-gray-500 hover:text-gray-900">
+            <span>Themes</span>
+            <svg className="ml-1 h-5 w-5 group-hover:text-gray-500 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"></path>
+            </svg>
+          </button>
+          <div style={{display: theme ? 'block' : 'none'}} className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+            <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                   <img className="flex-shrink-0 w-12" src={LanzoLogo} alt="Lanzo"></img>
+                   <div className="ml-4">
+                      <p className="text-base font-medium text-gray-900">Lanzo</p>
+                      <p className="mt-1 text-sm text-gray-500">Gutenberg WooCommerce WordPress Theme</p>
+                   </div>
+                 </a>
+                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                   <img className="flex-shrink-0 w-12" src={CesaLogo} alt="Cesa"></img>
+                   <div className="ml-4">
+                      <p className="text-base font-medium text-gray-900">Cesa</p>
+                      <p className="mt-1 text-sm text-gray-500">Gutenberg WooCommerce WordPress Theme</p>
+                   </div>
+                 </a>
+                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                   <img className="flex-shrink-0 w-12" src={MiproLogo} alt="Mipro"></img>
+                   <div className="ml-4">
+                      <p className="text-base font-medium text-gray-900">Mipro</p>
+                      <p className="mt-1 text-sm text-gray-500">Minimal WooCommerce WordPress Theme</p>
+                   </div>
+                 </a>
+                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                   <img className="flex-shrink-0 w-12" src={OrgafreshLogo} alt="Orgafresh"></img>
+                   <div className="ml-4">
+                      <p className="text-base font-medium text-gray-900">Orgafresh</p>
+                      <p className="mt-1 text-sm text-gray-500">Organic and Food WooCommerce WordPress Theme</p>
+                   </div>
+                 </a>
+                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                   <img className="flex-shrink-0 w-12" src={UmbalaLogo} alt="Umbala"></img>
+                   <div className="ml-4">
+                      <p className="text-base font-medium text-gray-900">Umbala</p>
+                      <p className="mt-1 text-sm text-gray-500">Fashion and Clothing Store WooCommerce Theme</p>
+                   </div>
+                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="relative">
+          <button
+          onClick={ () => {
+            setTheme(false)
+            setDocument( ! document )
+          }}
+          className="ml-4 inline-flex items-center text-base font-medium px-3 py-2 rounded-md text-gray-500 hover:text-gray-900">
+            <span>Documentation</span>
+            <svg className="ml-1 h-5 w-5 group-hover:text-gray-500 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"></path>
+            </svg>
+          </button>
+          <div style={{display: document ? 'block' : 'none'}} className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-max sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+            <div className="rounded-sm shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div className="relative w-48 grid gap-4 bg-white px-1 py-2 sm:gap-3 sm:p-4">
+                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Lanzo</a>
+                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Cesa</a>
+                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Mipro</a>
+                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Orgafresh</a>
+                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Umbala</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://themeforest.net/user/alurastudio/portfolio/" className="ml-4 text-gray-800 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-medium bg-gray-200 hover:bg-gray-100">
+         <svg className="mr-1" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="-34.32047659 -70.74 659.48047659 705.28041072" width="18"><path d="m467 26.32c-82.74-97.06-350.5 90.93-348.33 333.27-.02 1.48-.33 2.93-.91 4.29a11.39 11.39 0 0 1 -2.44 3.62 11.19 11.19 0 0 1 -3.63 2.45c-1.35.58-2.8.89-4.27.91-.98-.01-1.94-.14-2.88-.4-.94-.25-1.84-.63-2.68-1.11s-1.62-1.07-2.32-1.75c-.69-.68-1.3-1.44-1.8-2.27-6.8-14.83-12.2-30.26-16.11-46.1s-6.32-32.01-7.19-48.3c-.88-16.29-.22-32.63 1.97-48.8 2.18-16.16 5.89-32.09 11.06-47.56.78-2.29.74-4.78-.12-7.05a10.45 10.45 0 0 0 -11.49-6.65c-2.38.4-4.56 1.6-6.16 3.42-11.03 11.77-20.93 24.56-29.57 38.19s-15.97 28.04-21.91 43.05a258.192 258.192 0 0 0 -13.47 46.39 257.972 257.972 0 0 0 -4.56 48.1c-.39 34.25 6.05 68.23 18.96 99.95a256.996 256.996 0 0 0 56.21 84.74 256.804 256.804 0 0 0 84.66 56.28 256.458 256.458 0 0 0 99.84 18.97c365.3-8.3 280.99-487.06 207.14-573.64z" fill="#81b441"/></svg>
+          Profile &rarr;
         </a>
       </div>
     </header>

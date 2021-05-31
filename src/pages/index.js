@@ -14,18 +14,18 @@ export default function Home() {
     <div className="divide-y divide-gray-200">
       <Head>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@tailwindcss" />
-        <meta name="twitter:creator" content="@tailwindcss" />
-        <meta name="twitter:title" content="Blog – Next JS and Tailwind CSS" />
-        <meta name="twitter:description" content="Next JS and Tailwind CSS from the Alura team." />
+        <meta name="twitter:site" content="@alurastudio" />
+        <meta name="twitter:creator" content="@alurastudio" />
+        <meta name="twitter:title" content="AluraStudio - WordPress Themes and Plugins" />
+        <meta name="twitter:description" content="AluraStudio - WordPress Themes and Plugins." />
         <meta name="twitter:image" content={`https://blog.tailwindcss.com${twitterCard}`} />
-        <meta property="og:url" content="https://blog.tailwindcss.com" />
+        <meta property="og:url" content="https://alura-studio.com" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Blog – Next JS and Tailwind CSS" />
-        <meta property="og:description" content="Next JS and Tailwind CSS from the Alura team." />
+        <meta property="og:title" content="AluraStudio" />
+        <meta property="og:description" content="AluraStudio - WordPress Themes and Plugins." />
         <meta property="og:image" content={`https://blog.tailwindcss.com${twitterCard}`} />
-        <title>Blog – Next JS and Tailwind CSS</title>
-        <meta name="description" content="Next JS and Tailwind CSS from the Alura team." />
+        <title>AluraStudio - WordPress Themes and Plugins.</title>
+        <meta name="description" content="Alura Studio - WordPress Themes and Plugins." />
       </Head>
       <div className="px-8 py-10 space-y-2 md:space-5 bg-gray-900 rounded-lg">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
