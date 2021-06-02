@@ -10,6 +10,13 @@ export const adamwathan = {
   avatar: adamwathanAvatar,
 }
 
+export const AluraStudio = {
+  name: 'AluraStudio',
+  twitter: '@alurastudio',
+  avatar: adamwathanAvatar,
+  link: 'https://themeforest.net/user/alurastudio/'
+}
+
 export const bradlc = {
   name: 'Brad Cornes',
   twitter: '@bradlc',

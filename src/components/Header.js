@@ -25,7 +25,7 @@ export default function Header() {
               setTheme(!theme)
               setDocument( false )
             }}
-            className="ml-4 inline-flex items-center text-base font-medium px-3 py-2 rounded-md text-gray-500 hover:text-gray-900">
+            className="ml-4 inline-flex items-center text-sm font-medium px-3 py-2 rounded-md text-gray-500 hover:text-gray-900">
             <span>Themes</span>
             <svg className="ml-1 h-5 w-5 group-hover:text-gray-500 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"></path>
@@ -79,7 +79,7 @@ export default function Header() {
             setTheme(false)
             setDocument( ! document )
           }}
-          className="ml-4 inline-flex items-center text-base font-medium px-3 py-2 rounded-md text-gray-500 hover:text-gray-900">
+          className="ml-4 inline-flex items-center text-sm font-medium px-3 py-2 rounded-md text-gray-500 hover:text-gray-900">
             <span>Documentation</span>
             <svg className="ml-1 h-5 w-5 group-hover:text-gray-500 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"></path>
@@ -97,7 +97,7 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <a href="https://themeforest.net/user/alurastudio/portfolio/" className="ml-4 text-gray-800 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-medium bg-gray-200 hover:bg-gray-100">
+        <a href="https://themeforest.net/user/alurastudio/portfolio/" className="ml-4 text-gray-800 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-sm font-medium bg-gray-300 hover:bg-gray-100">
          <svg className="mr-1" xmlns="http://www.w3.org/2000/svg" height="18" viewBox="-34.32047659 -70.74 659.48047659 705.28041072" width="18"><path d="m467 26.32c-82.74-97.06-350.5 90.93-348.33 333.27-.02 1.48-.33 2.93-.91 4.29a11.39 11.39 0 0 1 -2.44 3.62 11.19 11.19 0 0 1 -3.63 2.45c-1.35.58-2.8.89-4.27.91-.98-.01-1.94-.14-2.88-.4-.94-.25-1.84-.63-2.68-1.11s-1.62-1.07-2.32-1.75c-.69-.68-1.3-1.44-1.8-2.27-6.8-14.83-12.2-30.26-16.11-46.1s-6.32-32.01-7.19-48.3c-.88-16.29-.22-32.63 1.97-48.8 2.18-16.16 5.89-32.09 11.06-47.56.78-2.29.74-4.78-.12-7.05a10.45 10.45 0 0 0 -11.49-6.65c-2.38.4-4.56 1.6-6.16 3.42-11.03 11.77-20.93 24.56-29.57 38.19s-15.97 28.04-21.91 43.05a258.192 258.192 0 0 0 -13.47 46.39 257.972 257.972 0 0 0 -4.56 48.1c-.39 34.25 6.05 68.23 18.96 99.95a256.996 256.996 0 0 0 56.21 84.74 256.804 256.804 0 0 0 84.66 56.28 256.458 256.458 0 0 0 99.84 18.97c365.3-8.3 280.99-487.06 207.14-573.64z" fill="#81b441"/></svg>
           Profile &rarr;
         </a>
