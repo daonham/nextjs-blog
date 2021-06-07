@@ -34,41 +34,55 @@ export default function Header() {
           <div style={{display: theme ? 'block' : 'none'}} className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                 <a href="/lanzo" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                   <img className="flex-shrink-0 w-12" src={LanzoLogo} alt="Lanzo"></img>
-                   <div className="ml-4">
-                      <p className="text-base font-medium text-gray-900">Lanzo</p>
-                      <p className="mt-1 text-sm text-gray-500">Gutenberg WooCommerce WordPress Theme</p>
-                   </div>
-                 </a>
-                 <a href="/cesa" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                   <img className="flex-shrink-0 w-12" src={CesaLogo} alt="Cesa"></img>
-                   <div className="ml-4">
-                      <p className="text-base font-medium text-gray-900">Cesa</p>
-                      <p className="mt-1 text-sm text-gray-500">Gutenberg WooCommerce WordPress Theme</p>
-                   </div>
-                 </a>
-                 <a href="/mipro" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                   <img className="flex-shrink-0 w-12" src={MiproLogo} alt="Mipro"></img>
-                   <div className="ml-4">
-                      <p className="text-base font-medium text-gray-900">Mipro</p>
-                      <p className="mt-1 text-sm text-gray-500">Minimal WooCommerce WordPress Theme</p>
-                   </div>
-                 </a>
-                 <a href="/orgafresh" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                   <img className="flex-shrink-0 w-12" src={OrgafreshLogo} alt="Orgafresh"></img>
-                   <div className="ml-4">
-                      <p className="text-base font-medium text-gray-900">Orgafresh</p>
-                      <p className="mt-1 text-sm text-gray-500">Organic and Food WooCommerce WordPress Theme</p>
-                   </div>
-                 </a>
-                 <a href="/umbala" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                   <img className="flex-shrink-0 w-12" src={UmbalaLogo} alt="Umbala"></img>
-                   <div className="ml-4">
-                      <p className="text-base font-medium text-gray-900">Umbala</p>
-                      <p className="mt-1 text-sm text-gray-500">Fashion and Clothing Store WooCommerce Theme</p>
-                   </div>
-                 </a>
+                <Link href="/lanzo">
+                   <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                     <img className="flex-shrink-0 w-12" src={LanzoLogo} alt="Lanzo"></img>
+                     <div className="ml-4">
+                        <p className="text-base font-medium text-gray-900">Lanzo</p>
+                        <p className="mt-1 text-sm text-gray-500">Gutenberg WooCommerce WordPress Theme</p>
+                     </div>
+                   </a>
+                 </Link>
+
+                 <Link href="/cesa">
+                   <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                     <img className="flex-shrink-0 w-12" src={CesaLogo} alt="Cesa"></img>
+                     <div className="ml-4">
+                        <p className="text-base font-medium text-gray-900">Cesa</p>
+                        <p className="mt-1 text-sm text-gray-500">Gutenberg WooCommerce WordPress Theme</p>
+                     </div>
+                   </a>
+                 </Link>
+
+                 <Link href="/mipro">
+                   <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                     <img className="flex-shrink-0 w-12" src={MiproLogo} alt="Mipro"></img>
+                     <div className="ml-4">
+                        <p className="text-base font-medium text-gray-900">Mipro</p>
+                        <p className="mt-1 text-sm text-gray-500">Minimal WooCommerce WordPress Theme</p>
+                     </div>
+                   </a>
+                 </Link>
+
+                 <Link href="/orgafresh">
+                   <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                     <img className="flex-shrink-0 w-12" src={OrgafreshLogo} alt="Orgafresh"></img>
+                     <div className="ml-4">
+                        <p className="text-base font-medium text-gray-900">Orgafresh</p>
+                        <p className="mt-1 text-sm text-gray-500">Organic and Food WooCommerce WordPress Theme</p>
+                     </div>
+                   </a>
+                 </Link>
+
+                 <Link href="/umbala">
+                   <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                     <img className="flex-shrink-0 w-12" src={UmbalaLogo} alt="Umbala"></img>
+                     <div className="ml-4">
+                        <p className="text-base font-medium text-gray-900">Umbala</p>
+                        <p className="mt-1 text-sm text-gray-500">Fashion and Clothing Store WooCommerce Theme</p>
+                     </div>
+                   </a>
+                 </Link>
               </div>
             </div>
           </div>

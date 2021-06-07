@@ -3,16 +3,16 @@ import * as fs from 'fs'
 import * as path from 'path'
 
 class InlineStylesHead extends Head {
-  getCssLinks() {
-    return this.__getInlineStyles()
+  getCssLinks( files ) {
+    return this.__getInlineStyles( files )
   }
 
-  __getInlineStyles() {
-    const { assetPrefix, files } = this.context
-    if (!files || files.length === 0) return null
+  __getInlineStyles( files ) {
+    const { assetPrefix } = this.context
 
-    return files
+    return files.sharedFiles
       .filter((file) => /\.css$/.test(file))
+      .filter((file) => fs.existsSync(path.join(process.cwd(), '.next', file)))
       .map((file) => (
         <style
           key={file}

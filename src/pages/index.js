@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import Image from 'next/image'
 import getAllPostPreviews from '@/getAllPostPreviews'
 import twitterCard from '@/img/twitter-card.png'
 import brand from '@/img/brand.png'
@@ -66,9 +65,11 @@ export default function Home() {
             <li key={link}>
               <article className="space-y-2 xl:space-y-0 xl:items-top ring-1 ring-black ring-opacity-5 rounded-sm">
                  <div>
-                   <a className="inline-block" href={link} title={meta.title}>
-                    <Image src={meta.image} className="object-cover h-full w-full rounded-t-sm" width={800} height={400} />
+                 <Link href={link}>
+                   <a className="inline-block" title={meta.title}>
+                    <img src={meta.image} className="object-cover h-full w-full rounded-t-sm" width={800} height={400} alt={meta.title} />
                    </a>
+                  </Link>
                  </div>
                 <div className="py-3 px-4">
                   <div className="space-y-2">

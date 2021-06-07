@@ -60,7 +60,7 @@ export default function Post({ meta, children, posts }) {
              <div className="rounded ring-1 ring-black ring-opacity-5">
                <div>
                  <a href={meta.url} title={meta.title}>
-                  <Image src={meta.image} className="object-cover h-full w-full rounded-t-sm" width={590} height={300} />
+                  <img src={meta.image} className="object-cover h-full w-full rounded-t-sm" width={590} height={300} alt={meta.title} />
                  </a>
                </div>
                <div className="flex justify-center sm:space-x-6 py-3 px-4">
