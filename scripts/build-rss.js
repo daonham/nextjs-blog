@@ -37,7 +37,7 @@ getAllPosts().forEach(({ link, module: { meta, default: Content } }) => {
   const html = ReactDOMServer.renderToStaticMarkup(mdx)
   const postText = `<p><em>(The post <a href="${siteUrl + link}">${
     meta.title
-  }</a> appeared first on <a href="${siteUrl}">Tailwind CSS Blog</a>.)</em></p>`
+  }</a> appeared first on <a href="${siteUrl}">AluraStudio</a>.)</em></p>`
   feed.addItem({
     title: meta.title,
     id: meta.title,
