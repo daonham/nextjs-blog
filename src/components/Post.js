@@ -55,8 +55,8 @@ export default function Post({ meta, children, posts }) {
           </div>
         </div>
       </header>
-      <div className="divide-y xl:divide-y-0 divide-gray-200 flex pt-10 justify-center">
-          <div className="w-full" style={{maxWidth: 590}}>
+      <div className="divide-y xl:divide-y-0 divide-gray-200 block xl:flex pt-10 justify-center">
+          <div className="w-full mx-auto xl:mx-0" style={{maxWidth: 590}}>
              <div className="rounded ring-1 ring-black ring-opacity-5">
                <div>
                  <a href={meta.url} title={meta.title}>
@@ -93,8 +93,8 @@ export default function Post({ meta, children, posts }) {
                 <MDXProvider components={mdxComponents}>{children}</MDXProvider>
               </div>
          </div>
-         <div className="ml-6">
-            <div className="sticky top-0 rounded ring-1 ring-black ring-opacity-10 max-w-xs w-full p-4">
+         <div className="xl:ml-6 text-center py-10 xl:py-0">
+            <div className="sticky top-0 mx-auto xl:mx-0 rounded ring-1 ring-black ring-opacity-10 max-w-xs w-full p-4">
                <div className="flex justify-between border-b pb-4 items-center">
                   <span className="font-semibold text-base">Regular Price</span>
                   <span className="font-semibold text-2xl">{meta.price}</span>

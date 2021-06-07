@@ -54,7 +54,7 @@ export default function Home() {
           All the latest WordPress themes crafted by AluraStudio.
         </p>
       </div>
-      <ul className="grid grid-cols-3 gap-20 py-12">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-10 sm:gap-20 py-12">
         {posts.map(({ link, module: { default: Component, meta } }) => {
           return (
             <li key={link}>
