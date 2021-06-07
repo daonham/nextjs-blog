@@ -2,7 +2,8 @@ import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import getAllPostPreviews from '@/getAllPostPreviews'
-import twitterCard from '@/img/twitter-card.jpg'
+import twitterCard from '@/img/twitter-card.png'
+import brand from '@/img/brand.png'
 
 const posts = getAllPostPreviews()
 
@@ -36,12 +37,17 @@ export default function Home() {
               <span className="text-blue-300"> crafted by AluraStudio.</span>
             </h2>
             <p className="mt-4 text-base text-gray-300 max-w-3xl mb-8">
-            Tailwind UI is a collection of professionally designed, pre-built, fully responsive HTML snippets you can drop into your Tailwind projects. Get started by checking out our free preview components, or browsing the PNG previews in the categories you're most curious about.
+            We are a team with the designer and developer specializing in the WordPress Theme products with high quality to provide customers the best product and meet your needs.
             </p>
             <div className="w-full text-center grid grid-cols-1 gap-3 sm:flex sm:gap-0 sm:space-x-6">
               <a href="mailto:support@alura-studio.com"className="text-sm font-semibold bg-white text-gray-900 py-3 px-4 rounded-lg hover:bg-gray-300 hover:text-gray-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900">
                 Contact Us
               </a>
+            </div>
+          </div>
+          <div className="relative h-full overflow-hidden">
+            <div className="absolute top-0 transform">
+              <img src={brand} alt="AluraStudio" />
             </div>
           </div>
         </div>

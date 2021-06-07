@@ -34,35 +34,35 @@ export default function Header() {
           <div style={{display: theme ? 'block' : 'none'}} className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                 <a href="/lanzo" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                    <img className="flex-shrink-0 w-12" src={LanzoLogo} alt="Lanzo"></img>
                    <div className="ml-4">
                       <p className="text-base font-medium text-gray-900">Lanzo</p>
                       <p className="mt-1 text-sm text-gray-500">Gutenberg WooCommerce WordPress Theme</p>
                    </div>
                  </a>
-                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                 <a href="/cesa" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                    <img className="flex-shrink-0 w-12" src={CesaLogo} alt="Cesa"></img>
                    <div className="ml-4">
                       <p className="text-base font-medium text-gray-900">Cesa</p>
                       <p className="mt-1 text-sm text-gray-500">Gutenberg WooCommerce WordPress Theme</p>
                    </div>
                  </a>
-                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                 <a href="/mipro" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                    <img className="flex-shrink-0 w-12" src={MiproLogo} alt="Mipro"></img>
                    <div className="ml-4">
                       <p className="text-base font-medium text-gray-900">Mipro</p>
                       <p className="mt-1 text-sm text-gray-500">Minimal WooCommerce WordPress Theme</p>
                    </div>
                  </a>
-                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                 <a href="/orgafresh" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                    <img className="flex-shrink-0 w-12" src={OrgafreshLogo} alt="Orgafresh"></img>
                    <div className="ml-4">
                       <p className="text-base font-medium text-gray-900">Orgafresh</p>
                       <p className="mt-1 text-sm text-gray-500">Organic and Food WooCommerce WordPress Theme</p>
                    </div>
                  </a>
-                 <a href="#" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                 <a href="/umbala" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                    <img className="flex-shrink-0 w-12" src={UmbalaLogo} alt="Umbala"></img>
                    <div className="ml-4">
                       <p className="text-base font-medium text-gray-900">Umbala</p>
@@ -88,11 +88,11 @@ export default function Header() {
           <div style={{display: document ? 'block' : 'none'}} className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-max sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
             <div className="rounded-sm shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="relative w-48 grid gap-4 bg-white px-1 py-2 sm:gap-3 sm:p-4">
-                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Lanzo</a>
-                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Cesa</a>
-                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Mipro</a>
-                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Orgafresh</a>
-                <a href="#" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Umbala</a>
+                <a href="http://demo.alura-studio.com/documentation/lanzo" target="_blank" rel="noopener noreferrer" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Lanzo</a>
+                <a href="http://demo.alura-studio.com/documentation/cesa" target="_blank" rel="noopener noreferrer" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Cesa</a>
+                <a href="http://demo.alura-studio.com/documentation/mipro" target="_blank" rel="noopener noreferrer" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Mipro</a>
+                <a href="http://demo.alura-studio.com/documentation/orgafresh" target="_blank" rel="noopener noreferrer" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Orgafresh</a>
+                <a href="http://demo.alura-studio.com/documentation/umbala" target="_blank" rel="noopener noreferrer" className="py-1 px-2 flex items-start rounded-lg hover:bg-gray-50 text-sm text-gray-600">Umbala</a>
               </div>
             </div>
           </div>

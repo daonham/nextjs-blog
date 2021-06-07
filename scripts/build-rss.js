@@ -1,7 +1,7 @@
 import fs from 'fs'
 import ReactDOMServer from 'react-dom/server'
 import { MDXProvider } from '@mdx-js/react'
-import Feed from 'feed'
+import {Feed} from 'feed'
 
 import { mdxComponents } from '../src/components/Post'
 import { getAllPosts } from '../src/getAllPostPreviews'
